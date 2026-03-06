@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Incoming\Behaviour.fs"/>
+        <Compile Include="Incoming\ExecutionModel.fs"/>
+        <Compile Include="Incoming\Work.fs"/>
+        <Compile Include="Configuration.fs"/>
+        <Compile Include="Worker.fs"/>
+        <Compile Include="Program.fs"/>
+    </ItemGroup>
+
+</Project>

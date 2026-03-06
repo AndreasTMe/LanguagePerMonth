@@ -18,10 +18,11 @@ Each implementation must:
 
 **Starter:** `Month00_CSharp/` - C#
 
-| **Month** | **Directory**   | **Language** |
-|-----------|-----------------|--------------|
-| January   | `Month01_Rust/` | Rust         |
-| February  | `Month02_Go/`   | Go           |
+| **Month** | **Directory**     | **Language** |
+|-----------|-------------------|--------------|
+| January   | `Month01_Rust/`   | Rust         |
+| February  | `Month02_Go/`     | Go           |
+| March     | `Month03_FSharp/` | F#           |
 
 Each month folder is intended to be self-contained and runnable from its own directory.
 
@@ -41,6 +42,12 @@ cd Month01_Rust && cargo run . --message-count 20 --thread-count 4 && cd ..
 
 ```bash
 cd Month02_Go && go run . --message-count 20 --thread-count 4 && cd ..
+```
+
+## March - F#
+
+```bash
+cd Month03_FSharp && dotnet run --project Workers/Workers.fsproj  --message-count 20 --thread-count 4 && cd ..
 ```
 
 ## Notes / Conventions
