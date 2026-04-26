@@ -16,38 +16,43 @@ Each implementation must:
 
 ## Project Structure
 
-**Starter:** `Month00_CSharp/` - C#
+**Starter:** `00_CSharp/` - C# ([Documentation](.docs/00_CSharp.md))
 
-| **Month** | **Directory**     | **Language** |
-|-----------|-------------------|--------------|
-| January   | `Month01_Rust/`   | Rust         |
-| February  | `Month02_Go/`     | Go           |
-| March     | `Month03_FSharp/` | F#           |
+- **January:** `01_Rust/` - Rust ([Documentation](.docs/01_Rust.md))
+- **February:** `02_Go/` - Go ([Documentation](.docs/02_Go.md))
+- **March:** `03_FSharp/` - F# ([Documentation](.docs/03_FSharp.md))
+- **April:** `04_Haskell/` - Haskell ([Documentation](.docs/04_Haskell.md))
 
 Each month folder is intended to be self-contained and runnable from its own directory.
 
 ## Starting project in C#
 
 ```bash
-cd Month00_CSharp && dotnet run --project Workers/Workers.csproj  --message-count 20 --thread-count 4 && cd ..
+cd 00_CSharp && dotnet run --project Workers/Workers.csproj  --message-count 20 --thread-count 4 && cd ..
 ```
 
 ## January - Rust
 
 ```bash
-cd Month01_Rust && cargo run . --message-count 20 --thread-count 4 && cd ..
+cd 01_Rust && cargo run . --message-count 20 --thread-count 4 && cd ..
 ```
 
 ## February - Go
 
 ```bash
-cd Month02_Go && go run . --message-count 20 --thread-count 4 && cd ..
+cd 02_Go && go run . --message-count 20 --thread-count 4 && cd ..
 ```
 
 ## March - F#
 
 ```bash
-cd Month03_FSharp && dotnet run --project Workers/Workers.fsproj  --message-count 20 --thread-count 4 && cd ..
+cd 03_FSharp && dotnet run --project Workers/Workers.fsproj  --message-count 20 --thread-count 4 && cd ..
+```
+
+## April - Haskell
+
+```bash
+cd 04_Haskell && stack run --stack-yaml ./workers/stack.yaml -- --message-count 20 --thread-count 4 && cd ..
 ```
 
 ## Notes / Conventions

@@ -1,0 +1,52 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.39.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:           workers
+version:        0.1.0.0
+license:        UNLICENSED
+build-type:     Simple
+extra-source-files:
+    README.md
+
+library
+  exposed-modules:
+      Behaviour
+      Configuration
+      ExecutionModel
+      Work
+      Worker
+  other-modules:
+      Paths_workers
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      async
+    , base >=4.7 && <5
+    , containers
+    , random
+    , stm
+    , time
+    , unliftio
+  default-language: Haskell2010
+
+executable workers
+  main-is: Main.hs
+  other-modules:
+      Paths_workers
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      async
+    , base >=4.7 && <5
+    , containers
+    , random
+    , stm
+    , time
+    , unliftio
+    , workers
+  default-language: Haskell2010

@@ -1,5 +1,5 @@
 [package]
-name = "Month01_Rust"
+name = "01_Rust"
 version = "0.1.0"
 edition = "2024"
 
