@@ -22,6 +22,7 @@ Each implementation must:
 - **February:** `02_Go/` - Go ([Documentation](.docs/02_Go.md))
 - **March:** `03_FSharp/` - F# ([Documentation](.docs/03_FSharp.md))
 - **April:** `04_Haskell/` - Haskell ([Documentation](.docs/04_Haskell.md))
+- **May:** `05_Elixir/` - Elixir ([Documentation](.docs/05_Elixir.md))
 
 Each month folder is intended to be self-contained and runnable from its own directory.
 
@@ -53,6 +54,12 @@ cd 03_FSharp && dotnet run --project Workers/Workers.fsproj  --message-count 20 
 
 ```bash
 cd 04_Haskell && stack run --stack-yaml ./workers/stack.yaml -- --message-count 20 --thread-count 4 && cd ..
+```
+
+## May - Elixir
+
+```bash
+cd 05_Elixir/workers && mix run -e "Program.main(System.argv())" -- --message-count 20 --thread-count 4 && cd ../..
 ```
 
 ## Notes / Conventions
