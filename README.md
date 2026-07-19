@@ -66,7 +66,7 @@ cd 05_Elixir/workers && mix run -e "Program.main(System.argv())" -- --message-co
 ## June - Kotlin
 
 ```bash
-cd 06_Kotlin/worker && ./gradlew clean run --args="--message-count 20 --thread-count 4" && cd ../..
+cd 06_Kotlin/workers && ./gradlew clean run --args="--message-count 20 --thread-count 4" && cd ../..
 ```
 
 ## Notes / Conventions
