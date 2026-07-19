@@ -1,6 +1,6 @@
 # Language Per Month Project
 
-A small “same-problem, different-language” series: each month adds a new implementation of the exact same concurrency
+A small "same-problem, different-language" series: each month adds a new implementation of the exact same concurrency
 exercise.
 
 ## The Challenge (shared across all months)
@@ -23,6 +23,7 @@ Each implementation must:
 - **March:** `03_FSharp/` - F# ([Documentation](.docs/03_FSharp.md))
 - **April:** `04_Haskell/` - Haskell ([Documentation](.docs/04_Haskell.md))
 - **May:** `05_Elixir/` - Elixir ([Documentation](.docs/05_Elixir.md))
+- **June:** `06_Kotlin/` - Kotlin ([Documentation](.docs/06_Kotlin.md))
 
 Each month folder is intended to be self-contained and runnable from its own directory.
 
@@ -60,6 +61,12 @@ cd 04_Haskell && stack run --stack-yaml ./workers/stack.yaml -- --message-count 
 
 ```bash
 cd 05_Elixir/workers && mix run -e "Program.main(System.argv())" -- --message-count 20 --thread-count 4 && cd ../..
+```
+
+## June - Kotlin
+
+```bash
+cd 06_Kotlin/worker && ./gradlew clean run --args="--message-count 20 --thread-count 4" && cd ../..
 ```
 
 ## Notes / Conventions
